@@ -10,7 +10,10 @@ public class MainClass {
         Resource resource = new ClassPathResource("applicationContext.xml");
         BeanFactory factory = new XmlBeanFactory(resource);
 
-        Student student = (Student) factory.getBean("studentBean");
-        student.displayInfo();
+        Student studentSetter = (Student) factory.getBean("studentBean");
+        studentSetter.displayInfo();
+
+        Student studentConst = (Student) factory.getBean("studentBeanConst");
+        studentConst.displayInfo();
     }
 }

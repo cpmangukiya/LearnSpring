@@ -7,7 +7,11 @@
                http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
     <bean id="studentBean" class="com.learnspring.Student">
-        <property name="name" value="Chintan PM"></property>
+        <property name="name" value="Chintan set"></property>
+    </bean>
+
+    <bean id="studentBeanConst" class="com.learnspring.Student">
+        <constructor-arg value="Chintan constructed"></constructor-arg>
     </bean>
 
 </beans>
